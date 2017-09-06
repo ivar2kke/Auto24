@@ -4,13 +4,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
     <h1 style="padding-bottom:10px; padding-top:10px; border-bottom:2px dashed lightgray;" class="text-center title">Auto24</h1>
+
+    <div class="row">
+        <div class="col-xs-4" style="border-right:2px dashed lightgray; padding:10px;">
+        <h2 style="text-align:center;">Menüü</h2>
+            <ul>
+                <li>Pealeht</li>
+                <li>Admini paneel</li>
+            </ul>
+        </div>
+        <div class="col-xs-4">
+
+        </div>
+    </div>
 </div>
 
 <!-- Optional JavaScript -->
