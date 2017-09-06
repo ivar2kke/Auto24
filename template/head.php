@@ -12,7 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <style>
-        @media screen and (max-width: 420px) {
+
+        @media screen and (min-width: 420px) {
             .navbar-divide {
                 padding-right: 1%;
                 border-right: solid white 1px;
@@ -21,7 +22,8 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#" class="navbar-divide">Auto24</a>
+
+    <a class="navbar-brand navbar-divide" href="index.php">Auto24</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,38 +31,40 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
+                <a class="nav-link" href="#"><?php echo translate('nav_home_text'); ?><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"><?php echo translate('nav_home_text'); ?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"><?php echo translate('nav_home_text'); ?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"><?php echo translate('nav_home_text'); ?></a>
             </li>
             <!-- Hide if user is not Admin -->
             <li class="nav-item">
-                <a class="nav-link" href="#">Admin Panel</a>
+                <a class="nav-link" href="admin.php"><?php echo translate('nav_admin_text'); ?></a>
             </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Log In</a>
+                <a class="nav-link" href="#"><?php echo translate('nav_login_text'); ?></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo translate('nav_language_text'); ?></a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">English</a>
-                    <a class="dropdown-item" href="#">Eesti keeles</a>
+                    <a class="dropdown-item" href="#"><?php echo translate('nav_english_text'); ?></a>
+                    <a class="dropdown-item" href="#"><?php echo translate('nav_estonian_text'); ?></a>
                 </div>
             </li>
         </ul>
 
         <form class="form-inline my-2 my-lg-0" style="margin-left: 1%">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+            <input class="form-control mr-sm-2" type="text" placeholder="<?php echo translate('nav_search_text'); ?>" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><?php echo translate('nav_search_text'); ?></button>
         </form>
     </div>
 </nav>
