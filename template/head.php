@@ -29,38 +29,38 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#"><?php echo translate('nav_home_text'); ?><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"><?php echo translate('nav_home_text'); ?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"><?php echo translate('nav_home_text'); ?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"><?php echo translate('nav_home_text'); ?></a>
             </li>
             <!-- Hide if user is not Admin -->
             <li class="nav-item">
-                <a class="nav-link" href="admin.php">Admin Panel</a>
+                <a class="nav-link" href="admin.php"><?php echo translate('nav_admin_text'); ?></a>
             </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Log In</a>
+                <a class="nav-link" href="#"><?php echo translate('nav_login_text'); ?></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo translate('nav_language_text'); ?></a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">English</a>
-                    <a class="dropdown-item" href="#">Eesti keeles</a>
+                    <a class="dropdown-item" href="#"><?php echo translate('nav_english_text'); ?></a>
+                    <a class="dropdown-item" href="#"><?php echo translate('nav_estonian_text'); ?></a>
                 </div>
             </li>
         </ul>
 
         <form class="form-inline my-2 my-lg-0" style="margin-left: 1%">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="text" placeholder="<?php echo translate('nav_search_text'); ?>" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><?php echo translate('nav_search_text'); ?></button>
         </form>
     </div>
 </nav>
