@@ -7,4 +7,19 @@ function get_template($template_part) {
     }
 }
 
+function translate($translate) {
+    global $t;
+
+    return isset($t[$translate]) ? $t[$translate] : "[" . $translate . "]";
+}
+
+function reDirectTo($url) {
+
+    if(empty($url)) {
+        exit();
+    }
+
+    header('Location: ' . $url);
+    exit();
+}
 ?>

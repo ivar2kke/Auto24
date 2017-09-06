@@ -1,10 +1,5 @@
 <?php 
-/** 
- * Created by PhpStorm. 
- * User: janek.mander 
- * Date: 10.05.2016 
- * Time: 9:09 
- */ 
+
 ?> 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 

@@ -3,7 +3,7 @@
 //error_reporting(0);
 
 defined('DS') ? NULL : define('DS', DIRECTORY_SEPARATOR);
-defined('PX') ? NULL : define('PX', 'autod_');
+defined('PX') ? NULL : define('PX', 'Autod24_');
 
 //DIRECTORY_SEPARATOR
 //Windows \
@@ -57,32 +57,34 @@ defined('TEMPLATE_URL_JS') ? null : define('TEMPLATE_URL_JS', MAIN_URL . 'templa
 
 
 require_once INCLUDE_PATH . 'functions.php';
+require_once INCLUDE_PATH . 'class/class.MySQLDatabase.php';
+require_once INCLUDE_PATH . 'class/class.DatabaseQuery.php';
+require_once INCLUDE_PATH . 'class/class.Session.php';
+require_once INCLUDE_PATH . 'class/class.User.php';
+
 /*Dynamic classes
-require_once INCLUDE_PATH . 'class.MySQLDatabase.php';
-require_once INCLUDE_PATH . 'class.DatabaseQuery.php';
-require_once INCLUDE_PATH . 'class.Session.php';
+
+
+
 require_once INCLUDE_PATH . 'class.Category.php';
 require_once INCLUDE_PATH . 'class.Product.php';
-require_once INCLUDE_PATH . 'functions.php';
-require_once INCLUDE_PATH . 'class.User.php';
 require_once INCLUDE_PATH . 'pages.php';
 require_once INCLUDE_PATH . 'class.Picture.php';
 require_once INCLUDE_PATH . 'class.ProductLanguage.php';
 */
-/*LANGUAGES
+
 if(isset($_SESSION['lang'])) {
     $lang = $_SESSION['lang'];
 } else {
     $lang = 'en';
 }
 defined('LANG') ? null : define('LANG', $lang);
-$langFile = INCLUDE_PATH . "languages" . DS . LANG . '.php';
+$langFile = INCLUDE_PATH . "lang" . DS . LANG . '.php';
 if(file_exists($langFile)) {
     require_once $langFile;
 } else {
     require_once INCLUDE_PATH . "languages" . DS . 'en.php';
 }
-*/
 
 
 //Added constants
