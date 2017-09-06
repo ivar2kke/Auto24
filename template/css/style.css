@@ -1,0 +1,88 @@
+.grid-item { width: 400px; }
+.grid-item--width2 { width: 800px; }
+#primary_nav_wrap
+{
+    margin-top:15px;
+    background-color:gray;
+    margin:0;
+    width:100%;
+    color:white;
+}
+
+#primary_nav_wrap ul
+{
+    list-style:none;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+    background-color:black;
+    width:100%;
+}
+
+#primary_nav_wrap ul a
+{
+    display:block;
+    text-decoration:none;
+    font-weight:700;
+    font-size:12px;
+    line-height:32px;
+    padding:0 15px;
+    font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color:black;
+    color:white;
+}
+
+#primary_nav_wrap ul li
+{
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+    border-right:1px solid darkgray;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+    background:#ddd;
+}
+
+#primary_nav_wrap ul ul
+{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    padding:0;
+}
+
+#primary_nav_wrap ul ul li
+{
+    float:none;
+    width:160%;
+    border-right:1px solid darkgray;
+}
+
+#primary_nav_wrap ul ul a
+{
+    line-height:120%;
+    padding:10px 15px;
+    background-color:darkcyan;
+}
+
+#primary_nav_wrap ul ul ul a{
+    background-color:darksalmon;
+}
+
+#primary_nav_wrap ul ul ul
+{
+    top:0;
+    left:100%;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+    display:block;
+}
+
